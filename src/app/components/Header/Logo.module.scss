@@ -1,0 +1,18 @@
+@import "@/app/styles/variables";
+@import "@/app/styles/mixins";
+
+.logoContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.logoText {
+  font-size: 32px;
+  font-weight: bold;
+  color: $white;
+
+  @include mobile {
+    font-size: 25px;
+  }
+}
