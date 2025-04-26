@@ -1,0 +1,51 @@
+@import "./variables";
+@import "./mixins";
+@import "./reset";
+
+// CSS 변수 정의
+:root {
+  --white: #{$white};
+  --black: #{$black};
+  --gray: #{$gray};
+  --blue: #{$blue};
+  --green: #{$green};
+}
+
+// 전역 스타일
+body {
+  background: $white;
+  color: $black;
+  font-family: "Pretendard-Regular";
+  font-size: 18px;
+}
+
+// 폰트 정의
+@font-face {
+  font-family: "Pretendard-Regular";
+  font-style: normal;
+  src:
+    local(※),
+    url("/font/Pretendard-Regular.eot") format("embedded-opentype"),
+    url("/font/Pretendard-Regular.woff") format("woff"),
+    url("/font/Pretendard-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Pretendard-Bold";
+  font-style: normal;
+  src:
+    local(※),
+    url("/font/Pretendard-Bold.eot") format("embedded-opentype"),
+    url("/font/Pretendard-Bold.woff") format("woff"),
+    url("/font/Pretendard-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "NewYork";
+  font-style: normal;
+  src:
+    local(※),
+    url("/font/NewYork.eot") format("embedded-opentype"),
+    url("/font/NewYork.woff") format("woff"),
+    url("/font/NewYork.woff2") format("woff2");
+}
