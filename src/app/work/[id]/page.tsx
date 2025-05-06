@@ -3,13 +3,12 @@ import { Project } from "@/app/types/project";
 import WorkDetailSection from "@/app/components/WorkDetailSection/WorkDetailSection";
 import Footer from "@/app/components/Footer/Footer";
 
-interface ProjectDetailProps {
-  params: {
-    id: string;
-  };
-}
+type Props = {
+  params: { id: string };
+  searchParams?: { [key: string]: string | string[] | undefined };
+};
 
-export default function ProjectDetail({ params }: ProjectDetailProps) {
+export default function ProjectDetail({ params }: Props) {
   const projectId = Number(params.id);
   const project = projects.find((p) => p.id === projectId) as Project;
 
@@ -23,4 +22,10 @@ export default function ProjectDetail({ params }: ProjectDetailProps) {
       <Footer />
     </>
   );
+}
+
+export function generateStaticParams() {
+  return projects.map((project) => ({
+    id: String(project.id),
+  }));
 }

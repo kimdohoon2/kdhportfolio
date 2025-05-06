@@ -1,5 +1,4 @@
-@import "@/app/styles/variables";
-@import "@/app/styles/mixins";
+@use "@/app/styles/_index" as *;
 
 .navItemContainer {
   margin: 0 10px;

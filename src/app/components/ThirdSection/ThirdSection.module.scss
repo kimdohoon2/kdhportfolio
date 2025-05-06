@@ -1,5 +1,4 @@
-@import "@/app/styles/variables.scss";
-@import "@/app/styles/mixins.scss";
+@use "@/app/styles/_index" as *;
 
 .thirdSection {
   padding: 80px 35px 0px 35px;

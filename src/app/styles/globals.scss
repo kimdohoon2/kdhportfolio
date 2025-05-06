@@ -1,6 +1,5 @@
-@import "./variables";
-@import "./mixins";
-@import "./reset";
+@use "./_index" as *;
+@use "./_reset";
 
 // CSS 변수 정의
 :root {
