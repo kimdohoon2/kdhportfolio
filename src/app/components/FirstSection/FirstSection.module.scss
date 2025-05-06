@@ -18,13 +18,18 @@
 }
 
 .firstSectionWrap {
-  width: 85%;
+  width: 100%;
   position: relative;
   z-index: 1;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   transform: translateY(100px);
+
+  @include mobile {
+    width: calc(100% - 30px);
+    transform: translateY(135px);
+  }
 }
 
 .firstSectionText {
@@ -32,6 +37,10 @@
   font-family: "NewYork";
   color: $white;
   text-align: center;
+
+  @include mobile {
+    font-size: 30px;
+  }
 }
 
 .firstSectionTextWrap {
@@ -57,23 +66,42 @@
       left: 0;
     }
   }
+
+  @include mobile {
+    font-size: 14px;
+  }
 }
 
 .skillsCircle {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
-  border: 1px solid $blue;
+  background-color: $white;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @include mobile {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.skillsIcon {
+  fill: $black;
 }
 
 .skillsCircleText {
   color: $white;
   margin-top: 8px;
   text-align: center;
+
+  @include mobile {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
 }
 
 .skillsContainer {
@@ -81,12 +109,18 @@
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 30px;
-  width: 75%;
+  width: 60%;
   margin: 0 auto;
 
+  @include tablet {
+    width: 100%;
+  }
+
   @include mobile {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0px;
   }
 }
 
@@ -94,7 +128,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .skillsTitle {
@@ -103,10 +136,25 @@
   font-family: "NewYork";
   text-align: center;
   margin-bottom: 15px;
+
+  @include mobile {
+    font-size: 30px;
+  }
 }
 
 .firstSectionPerson {
-  display: flex;
-  justify-content: center;
+  margin: 0 auto;
   margin-bottom: 15px;
+  width: 64px;
+  height: 64px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  @include mobile {
+    width: 32px;
+    height: 32px;
+  }
 }
