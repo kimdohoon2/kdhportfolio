@@ -3,7 +3,6 @@ import "@/app/styles/globals.scss";
 import Header from "@/app/components/Header/Header";
 import SnsBox from "@/app/components/SnsBox";
 import ScrollButton from "@/app/components/ScrollButton";
-
 export const metadata: Metadata = {
   title: "프론트엔드 개발자 김도훈 포트폴리오",
   description:
@@ -37,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body>
-        <div className="port_wrap">
+        <div>
           <Header />
           <SnsBox />
           <ScrollButton />
