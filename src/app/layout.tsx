@@ -17,11 +17,11 @@ export const metadata: Metadata = {
       "항상 도전하고 성장해나가는 삶을 추구하는 프론트엔드 개발자 입니다.",
     images: [
       {
-        url: "https://koreantrip.vercel.app/meta/sum-logo.jpg",
+        url: "https://kdhportfolio.vercel.app/meta/sum-logo.jpg",
         alt: "프론트엔드 개발자 김도훈 포트폴리오",
       },
     ],
-    url: "https://koreantrip.vercel.app/",
+    url: "https://kdhportfolio.vercel.app/",
   },
   icons: {
     icon: "/favicon.ico",
