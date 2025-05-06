@@ -1,0 +1,17 @@
+@import "@/app/styles/variables";
+@import "@/app/styles/mixins";
+
+.copyright {
+  font-family: "NewYork";
+  font-size: 18px;
+  color: $black;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  @include mobile {
+    padding-bottom: 60px;
+    padding-top: 50px;
+    font-size: 16px;
+  }
+}
