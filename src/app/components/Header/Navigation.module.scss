@@ -28,7 +28,6 @@
   @include mobile {
     flex-direction: column;
     gap: 100px;
-    align-items: center;
-    margin-top: 150px;
+    justify-content: center;
   }
 }

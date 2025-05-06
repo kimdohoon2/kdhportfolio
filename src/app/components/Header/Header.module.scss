@@ -10,12 +10,9 @@
   mix-blend-mode: difference;
   top: 35px;
 
-  &.on {
-    mix-blend-mode: unset;
-  }
-
   @include mobile {
     padding: 0 15px;
+    top: 15px;
     mix-blend-mode: unset;
   }
 }
