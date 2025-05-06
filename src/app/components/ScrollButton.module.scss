@@ -1,3 +1,6 @@
+@import "@/app/styles/variables";
+@import "@/app/styles/mixins";
+
 .scrollDownPosition {
   position: fixed;
   right: 35px;
@@ -6,6 +9,12 @@
   display: flex;
   opacity: 1;
   transition: opacity 0.75s cubic-bezier(0.4, 0, 0.2, 1);
+  mix-blend-mode: difference;
+
+  @include mobile {
+    right: 15px;
+    bottom: 15px;
+  }
 }
 
 .scrollDownContent {
@@ -18,6 +27,11 @@
   height: 80px;
   transform-style: preserve-3d;
   backface-visibility: hidden;
+
+  @include mobile {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .scrollDownImage {
@@ -34,4 +48,9 @@
   transform: translate(-50%, -50%) rotate(90deg);
   transform-origin: center center;
   will-change: transform;
+
+  @include mobile {
+    width: 14px;
+    height: 14px;
+  }
 }
