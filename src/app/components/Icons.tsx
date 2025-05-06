@@ -20,6 +20,9 @@ import BlogIcon from "/public/icons/blogger.svg";
 import ArrowRightIcon from "/public/icons/arrow-right.svg";
 import LinkIcon from "/public/icons/link.svg";
 import SCSSIcon from "/public/icons/sass.svg";
+import DownloadIcon from "/public/icons/download.svg";
+import MailIcon from "/public/icons/mail.svg";
+import PhoneIcon from "/public/icons/phone.svg";
 
 // 아이콘 인터페이스
 interface IconProps extends SVGProps<SVGSVGElement> {
@@ -96,4 +99,7 @@ export {
   ArrowRightIcon,
   LinkIcon,
   SCSSIcon,
+  DownloadIcon,
+  MailIcon,
+  PhoneIcon,
 };
