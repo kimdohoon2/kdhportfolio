@@ -19,7 +19,7 @@ export default function SnsBox() {
         >
           <span className={styles.smallCircle}></span>
           <div className={styles.snsBoxLinkIcon}>
-            <GithubIcon fill="white" />
+            <GithubIcon className={styles.githubIcon} fill="black" />
           </div>
         </a>
         <a
@@ -31,7 +31,7 @@ export default function SnsBox() {
         >
           <span className={styles.smallCircle}></span>
           <div className={styles.snsBoxLinkIcon}>
-            <BlogIcon fill="white" />
+            <BlogIcon className={styles.blogIcon} fill="black" />
           </div>
         </a>
       </div>
