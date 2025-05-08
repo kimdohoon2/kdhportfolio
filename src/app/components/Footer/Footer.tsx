@@ -52,7 +52,7 @@ export default function Footer() {
           <div>
             <p className={styles.contactTitle}>Contact me</p>
             <p className={styles.contactText}>
-              함께 일하고 싶은 프론트 엔드 개발자 찾고 계신가요?
+              함께 일하고 싶은 프론트엔드 개발자 찾고 계신가요?
             </p>
             <p className={styles.contactText}>언제든 연락주세요!</p>
           </div>
