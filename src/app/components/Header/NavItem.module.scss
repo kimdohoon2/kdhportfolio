@@ -22,7 +22,7 @@
     stroke-dasharray: 50 0;
     stroke-width: 3px;
     stroke-dashoffset: 0;
-    stroke: $blue;
+    stroke: $white;
   }
 }
 
@@ -50,6 +50,5 @@
 
   &:hover {
     font-weight: bold;
-    color: $blue;
   }
 }
