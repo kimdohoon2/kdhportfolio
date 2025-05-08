@@ -3,7 +3,6 @@
 import styles from "@/app/components/FirstSection/FirstSection.module.scss";
 import Meteor from "./Meteor";
 import { useState, useEffect } from "react";
-// import Image from "next/image";
 
 export default function FirstSection() {
   // 애니메이션 상태를 관리하는 state
@@ -65,12 +64,6 @@ export default function FirstSection() {
 
   return (
     <section id="home" className={styles.firstSectionContainer}>
-      {/* <Image
-        className={styles.firstSectionBackground}
-        src="/home/bg1.jpg"
-        alt="배경 이미지"
-        fill
-      /> */}
       <Meteor count={4} />
       <div className={styles.firstSectionWrap}>
         <div className={styles.firstSectionBox}>
