@@ -86,7 +86,7 @@ export default function ScrollButton() {
           src="/icons/right-arrow-white.png"
           alt="스크롤 화살표"
           width={18}
-          height={18}
+          height={26}
         />
       </Link>
     </div>

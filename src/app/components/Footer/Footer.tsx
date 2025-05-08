@@ -1,10 +1,10 @@
 "use client";
 
+import gsap from "gsap";
+import Link from "next/link";
 import styles from "@/app/components/Footer/Footer.module.scss";
-
 import { DownloadIcon, MailIcon, PhoneIcon } from "@/app/components/Icons";
 import { useEffect, useRef } from "react";
-import gsap from "gsap";
 
 export default function Footer() {
   const resumePath = "/resume/김도훈-이력서.pdf";
@@ -69,36 +69,40 @@ export default function Footer() {
           </div>
           <div className={styles.contactWrap}>
             <div className={styles.contactWrapItem}>
-              <a
+              <Link
                 className={styles.contactWrapItemCircle}
                 href="tel:010-5703-3994"
                 data-tel="010-5703-3994"
+                aria-label="김도훈 전화번호"
               >
                 <PhoneIcon className={styles.contactWrapItemIcon} />
-              </a>
-              <a
+              </Link>
+              <Link
                 className={styles.contactWrapItemText}
                 href="tel:010-5703-3994"
                 target="_parent"
+                aria-label="김도훈 전화번호"
               >
                 010-5703-3994
-              </a>
+              </Link>
             </div>
             <div className={styles.contactWrapItem}>
-              <a
+              <Link
                 className={styles.contactWrapItemCircle}
                 href="mailto:kingyska@nate.com"
                 data-email="kingyska@naver.com"
+                aria-label="김도훈 이메일"
               >
                 <MailIcon className={styles.contactWrapItemIcon} />
-              </a>
-              <a
+              </Link>
+              <Link
                 className={styles.contactWrapItemText}
                 href="mailto:kingyska@nate.com"
                 data-email="kingyska@naver.com"
+                aria-label="김도훈 이메일"
               >
                 kingyska@nate.com
-              </a>
+              </Link>
             </div>
           </div>
         </div>

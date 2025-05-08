@@ -111,6 +111,7 @@ export default function SecondSection() {
                         href={`/work/${work.id}`}
                         onMouseMove={handleCircleMove}
                         onMouseEnter={handleCircleMove}
+                        aria-label={`프로젝트 설명 바로가기 ${work.title}`}
                       >
                         <span className={styles.smallCircle}></span>
                         <ArrowRightIcon
@@ -132,6 +133,7 @@ export default function SecondSection() {
                         target="_blank"
                         onMouseMove={handleCircleMove}
                         onMouseEnter={handleCircleMove}
+                        aria-label={`홈페이지 바로가기 ${work.title}`}
                       >
                         <span className={styles.smallCircle}></span>
                         <LinkIcon className={styles.linkIcon} fill="black" />
@@ -149,6 +151,7 @@ export default function SecondSection() {
                         target="_blank"
                         onMouseMove={handleCircleMove}
                         onMouseEnter={handleCircleMove}
+                        aria-label={`깃헙 바로가기 ${work.title}`}
                       >
                         <span className={styles.smallCircle}></span>
                         <GithubIcon className={styles.gitIcon} fill="black" />
@@ -161,7 +164,11 @@ export default function SecondSection() {
               <div className={styles.workBox}>
                 <div className={styles.workImg}>
                   {work.siteLink ? (
-                    <Link href={work.siteLink} target="_blank">
+                    <Link
+                      href={work.siteLink}
+                      target="_blank"
+                      aria-label={`프로젝트 이미지 ${work.title}`}
+                    >
                       <div className={styles.imageWrapper}>
                         <Image
                           src={work.imgSrc || ""}
@@ -170,6 +177,7 @@ export default function SecondSection() {
                           sizes="(max-width: 768px) 100vw, 50vw"
                           style={{ objectFit: "cover" }}
                           priority={index < 2}
+                          aria-label={`프로젝트 이미지 ${work.title}`}
                         />
                       </div>
                     </Link>
@@ -181,6 +189,7 @@ export default function SecondSection() {
                         fill
                         sizes="(max-width: 768px) 100vw, 50vw"
                         style={{ objectFit: "cover" }}
+                        aria-label={`추가 프로젝트 이미지 ${work.title}`}
                       />
                     </div>
                   )}

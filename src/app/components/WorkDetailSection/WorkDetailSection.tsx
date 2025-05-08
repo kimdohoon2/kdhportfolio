@@ -90,6 +90,7 @@ export default function WorkDetailSection({ project }: WorkDetailSectionProps) {
                     target="_blank"
                     onMouseMove={handleCircleMove}
                     onMouseEnter={handleCircleMove}
+                    aria-label={`프로젝트 링크 ${project.title}`}
                   >
                     <span className={styles.smallCircle}></span>
                     <LinkIcon className={styles.linkIcon} fill="black" />
@@ -104,6 +105,7 @@ export default function WorkDetailSection({ project }: WorkDetailSectionProps) {
                       target="_blank"
                       onMouseMove={handleCircleMove}
                       onMouseEnter={handleCircleMove}
+                      aria-label={`깃허브 링크 ${project.title}`}
                     >
                       <span className={styles.smallCircle}></span>
                       <GithubIcon className={styles.gitIcon} fill="black" />
@@ -186,6 +188,7 @@ export default function WorkDetailSection({ project }: WorkDetailSectionProps) {
                   target="_blank"
                   key={index}
                   className={styles.blogItem}
+                  aria-label={`관련 블로그 링크 ${blogItem.title}`}
                 >
                   <div className={styles.blogImageWrapper}>
                     <Image
@@ -194,6 +197,7 @@ export default function WorkDetailSection({ project }: WorkDetailSectionProps) {
                       width={300}
                       height={200}
                       className={styles.blogImage}
+                      aria-label={`관련 블로그 이미지 ${blogItem.title}`}
                     />
                     <div className={styles.blogOverlay}></div>
                     <h3 className={styles.blogTitle}>{blogItem.title}</h3>
