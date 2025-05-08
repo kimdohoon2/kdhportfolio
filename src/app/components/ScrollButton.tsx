@@ -3,6 +3,7 @@
 import Link from "next/link";
 import styles from "@/app/components/ScrollButton.module.scss";
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 
 export default function ScrollButton() {
   // 현재 회전 각도를 저장하기 위한 refs
@@ -72,7 +73,7 @@ export default function ScrollButton() {
     <div className={styles.scrollDownPosition}>
       <Link className={styles.scrollDownContent} href="#Home">
         <div className={styles.scrollDownWrap}>
-          <img
+          <Image
             className={styles.scrollDownImage}
             src="/icons/scroll-down-white.png"
             alt="스크롤 다운"
@@ -80,7 +81,7 @@ export default function ScrollButton() {
             height={80}
           />
         </div>
-        <img
+        <Image
           className={styles.downArrowImage}
           src="/icons/right-arrow-white.png"
           alt="스크롤 화살표"
