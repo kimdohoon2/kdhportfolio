@@ -12,8 +12,8 @@
 
 // 전역 스타일
 body {
-  background: $white;
-  color: $black;
+  background: $black;
+  color: $white;
   font-family: "Pretendard-Regular";
   font-size: 18px;
 }
@@ -47,4 +47,34 @@ body {
     url("/font/NewYork.eot") format("embedded-opentype"),
     url("/font/NewYork.woff") format("woff"),
     url("/font/NewYork.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Paperlogy-Regular";
+  font-style: normal;
+  src:
+    local(※),
+    url("/font/Paperlogy-4Regular.eot") format("embedded-opentype"),
+    url("/font/Paperlogy-4Regular.woff") format("woff"),
+    url("/font/Paperlogy-4Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Paperlogy-Medium";
+  font-style: normal;
+  src:
+    local(※),
+    url("/font/Paperlogy-5Medium.eot") format("embedded-opentype"),
+    url("/font/Paperlogy-5Medium.woff") format("woff"),
+    url("/font/Paperlogy-5Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Paperlogy-Bold";
+  font-style: normal;
+  src:
+    local(※),
+    url("/font/Paperlogy-7Bold.eot") format("embedded-opentype"),
+    url("/font/Paperlogy-7Bold.woff") format("woff"),
+    url("/font/Paperlogy-7Bold.woff2") format("woff2");
 }
