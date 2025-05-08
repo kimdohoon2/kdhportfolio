@@ -1,7 +1,6 @@
 import { projects } from "@/app/data/project";
 import { Project } from "@/app/types/project";
 import WorkDetailSection from "@/app/components/WorkDetailSection/WorkDetailSection";
-import Footer from "@/app/components/Footer/Footer";
 
 type Props = {
   params: { id: string };
@@ -19,7 +18,6 @@ export default function ProjectDetail({ params }: Props) {
   return (
     <>
       <WorkDetailSection project={project} />
-      <Footer />
     </>
   );
 }
