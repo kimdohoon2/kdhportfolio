@@ -11,7 +11,7 @@
 
 - **프레임워크:** Next.js
 - **언어:** TypeScript
-- **스타일링:** SCSS, CSS Modules
+- **스타일링:** SCSS
 - **애니메이션:** GSAP
 - **배포:** Vercel
 
