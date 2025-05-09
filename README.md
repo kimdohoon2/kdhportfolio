@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 프론트엔드 개발자 김도훈 포트폴리오
 
-## Getting Started
+[![Website](https://img.shields.io/badge/웹사이트-kdhportfolio.vercel.app-blue)](https://kdhportfolio.vercel.app/)
+[![GitHub](https://img.shields.io/badge/GitHub-kimdohoon2-green)](https://github.com/kimdohoon2)
 
-First, run the development server:
+## 프로젝트 소개
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+지금까지의 작업물과 프로젝트 경험을 정리하고, 저의 개발 철학과 방향성을 담아 만든 포트폴리오입니다.
+
+## 기술 스택
+
+- **프레임워크:** Next.js
+- **언어:** TypeScript
+- **스타일링:** SCSS, CSS Modules
+- **애니메이션:** GSAP
+- **배포:** Vercel
+
+## 주요 기능
+
+- 자기소개 및 기술 스택 소개
+- 주요 프로젝트 작업물 전시
+- 프로젝트 상세 페이지 (개발 과정, 기술적 도전과 해결 방법)
+- 블로그 게시물 연결
+
+## 프로젝트 구조
+
+```
+src/
+├── app/
+│   ├── components/      # UI 컴포넌트
+│   ├── data/            # 프로젝트 데이터 (경험, 프로젝트 정보)
+│   ├── styles/          # 전역 스타일
+│   ├── types/           # TypeScript 타입 정의
+│   ├── hooks/           # 커스텀 훅
+│   ├── work/[id]/       # 작업물 상세 페이지
+│   ├── page.tsx         # 메인 페이지
+│   └── layout.tsx       # 레이아웃 컴포넌트
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 설치 및 실행 방법
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# 저장소 클론
+git clone <저장소-URL>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# 프로젝트 폴더로 이동
+cd kdhportfolio
 
-## Learn More
+# 종속성 설치
+npm install
 
-To learn more about Next.js, take a look at the following resources:
+# 개발 서버 실행
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[http://localhost:3000](http://localhost:3000)에서 프로젝트를 확인할 수 있습니다.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 주요 프로젝트
 
-## Deploy on Vercel
+### 1. 여행 어디가?
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- 한국관광공사 API 활용 여행 정보 서비스
+- Next.js, TypeScript, Tailwind CSS, React Query, Zustand
+- [웹사이트](https://koreantrip.vercel.app/) | [GitHub](https://github.com/kimdohoon2/trip)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 2. Coworks
+
+- To-do 리스트 형태의 업무 배정 및 현황 공유 서비스
+- Next.js, TypeScript, Tailwind CSS, React-Query, Redux
+- [웹사이트](https://team8-coworkers.vercel.app/) | [GitHub](https://github.com/codeit-sprint-FE11-part4-8team/coworkers)
+
+## 배포
+
+이 프로젝트는 [Vercel](https://vercel.com)을 통해 배포되었습니다.
