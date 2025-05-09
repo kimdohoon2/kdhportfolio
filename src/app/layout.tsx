@@ -1,10 +1,11 @@
-import type { Metadata } from "next";
+import { Metadata } from "next";
 import "@/app/styles/globals.scss";
 import Header from "@/app/components/Header/Header";
 import SnsBox from "@/app/components/SnsBox";
 import ScrollButton from "@/app/components/ScrollButton";
 import Footer from "@/app/components/Footer/Footer";
 import JsonLd from "@/app/components/JsonLd";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "프론트엔드 개발자 김도훈 포트폴리오",
@@ -42,8 +43,25 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body>
+        {/* Google Analytics */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-BEEP7DTK7K"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-BEEP7DTK7K');
+          `}
+        </Script>
+
+        {/* JsonLd 구조화 데이터 */}
+        <JsonLd />
+
         <div>
-          <JsonLd />
           <Header />
           <SnsBox />
           <ScrollButton />
