@@ -1,9 +1,9 @@
 "use client";
 
 import styles from "@/app/components/FirstSection/FirstSection.module.scss";
-import Meteor from "./Meteor";
+import Meteor from "@/app/components/Meteor";
 import { useState, useEffect } from "react";
-
+import StarBackground from "@/app/components/StarBackground";
 export default function FirstSection() {
   // 애니메이션 상태를 관리하는 state
   const [titleVisible, setTitleVisible] = useState(false);
@@ -26,8 +26,6 @@ export default function FirstSection() {
       return;
     }
 
-    // 첫 방문 시에만 애니메이션 재생
-    // 제목 애니메이션은 페이지 로드 후 300ms 후 시작
     const titleTimer = setTimeout(() => {
       setTitleVisible(true);
     }, 50);
@@ -64,6 +62,7 @@ export default function FirstSection() {
 
   return (
     <section id="home" className={styles.firstSectionContainer}>
+      <StarBackground />
       <Meteor count={4} />
       <div className={styles.firstSectionWrap}>
         <div className={styles.firstSectionBox}>

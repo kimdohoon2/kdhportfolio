@@ -3,7 +3,7 @@
 import styles from "@/app/components/ThirdSection/ThirdSection.module.scss";
 import Image from "next/image";
 import profile from "/public/about/profile.png";
-import Meteor from "@/app/components/FirstSection/Meteor";
+import Meteor from "@/app/components/Meteor";
 import SkillContainer from "@/app/components/SkillContainer";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
